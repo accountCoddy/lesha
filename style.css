@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: radial-gradient(aqua,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: white;
+    width: 300;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.title{
+    text-align: center;
+    color: wheat;
+}
+
+.img{
+    width: 100px;
+    position: relative;
+    left:  100px;
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
+    color: wheat;
+    margin-bottom: 25px;
+}
+
+.sign{
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: wheat;
+}
+
+.object{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    /* rotate: 45deg; */
+}
+
+.object::before, .object::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+}
+
+.object::before{
+    left: -15px;
+}
+
+.object::after{
+    top: -15px;
+}
+
+
